@@ -11,4 +11,4 @@ cd $PBS_O_WORKDIR
 
 ulimit -s unlimited
 export OMP_NUM_THREADS=24
-./dip63.out > output.txt
+./run_executable.out > output.txt

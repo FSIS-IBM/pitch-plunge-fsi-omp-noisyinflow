@@ -11,5 +11,5 @@ cp -R $PBS_O_WORKDIR/* .
 
 ulimit -s unlimited
 export OMP_NUM_THREADS=16
-./main.out > output.txt
+./run_executable.out > output.txt
 mv ../job$tpdir $PBS_O_WORKDIR/. 

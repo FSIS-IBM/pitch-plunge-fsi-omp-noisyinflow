@@ -10,7 +10,7 @@ PGCXFLAGSOMP = -O2 -fopenmp
 # Targets needed to bring the executable up to date
 	
 mainpg: main.o nearestIBpoint.o assign_flag.o evalMaxError.o solverUVGaussSeidelSOR.o solverPGaussSeidelSOR.o
-	$(PGCX) $(PGCXFLAGSOMP) -o dip51.out main.o nearestIBpoint.o assign_flag.o evalMaxError.o solverUVGaussSeidelSOR.o solverPGaussSeidelSOR.o
+	$(PGCX) $(PGCXFLAGSOMP) -o run_executable.out main.o nearestIBpoint.o assign_flag.o evalMaxError.o solverUVGaussSeidelSOR.o solverPGaussSeidelSOR.o
 	
 # The main.o target can be written more simply
 	
